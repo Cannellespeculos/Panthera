@@ -28,6 +28,11 @@ article h2 a{
     color: gray;
 }
 
+ul ~ p a {
+    color: black;
+    text-decoration: underline;
+}
+
 main {
     width: 100%;
 }
@@ -40,6 +45,13 @@ div:first-child p:last-child{
     display: none;
     margin: 0 0 35px 0;
 }
+
+article p a {
+    color: #808080;
+    font-weight: bold;
+}
+
+
 
 main > div {
     padding: 0 10%;
@@ -79,6 +91,7 @@ img {
 
 article p {
     margin: 15px;
+    width: 80%;
 }
 
 article div {
