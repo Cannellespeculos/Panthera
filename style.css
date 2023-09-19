@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    text-transform: uppercase;
+    color:gray;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.20);
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+p{
+    color: gray;
+}
+
+article h2 a{
+    color: gray;
+}
+
+main {
+    width: 100%;
+}
+
+div {
+    text-align: center;
+}
+
+div:first-child p:last-child{
+    display: none;
+    margin: 0 0 35px 0;
+}
+
+main > div {
+    padding: 0 10%;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn:target {
+    display: block;
+}
+
+hr {
+    border: 1px dashed black;
+    margin: 0 0 10px 0;
+}
+
+article {
+    margin: 0 0 15px 0;
+}
+
+
+button {
+    background-color: #bbbb;
+    padding: 5px ;
+    color: white;
+    border: none;
+    margin: 15px 0;
+}
+
+img {
+    width: 90%;
+    margin: 0 0 0 10px;
+}
+
+article p {
+    margin: 15px;
+}
+
+article div {
+    display: none;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+#leopard:target{
+    display: block
+}
+
+#lion:target {
+    display: block;
+}
+
+#neige:target {
+    display: block;
+}
+
+#tigre:target {
+    display: block;
+}
+
+#jaguar:target {
+    display: block;
+}
+
+ul {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (min-width: 400px) {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: left;
+        margin: 20px;
+     
+    }
+
+    li {
+        background-color: #808080;
+        margin: 1%;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    button {
+        display: none;
+    }
+
+    div:first-child p:last-child{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    ul {
+        background-color: #808080;
+       padding: 5px; 
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+
+    article div img {
+        float: left;
+        width: 20%;
+        height: 200px;
+    }
+
+    article ~ div{
+        clear: both;
+    }
+}
